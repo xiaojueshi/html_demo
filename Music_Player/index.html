@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="top-bar">
+      <i class="material-symbols-outlined">expand_more</i>
+      <span>Now Playing</span>
+      <i class="material-symbols-outlined">more_horiz</i>
+    </div>
+    <div class="img-area">
+      <img src="#" alt="">
+    </div>
+    <div class="song-details">
+      <p class="name"></p>
+      <p class="artist"></p>
+    </div>
+    <div class="progress-area">
+      <div class="progress-bar"></div>
+      <div class="timer">
+        <span class="current">0:00</span>
+        <span class="duration">0:00</span>
+      </div>
+      <audio id="main-audio" src=""></audio>
+    </div>
+    <div class="controls">
+      <i id="repeat-plist" class="material-symbols-outlined" title="列表循环播放">repeat</i>
+      <i id="prev" class="material-symbols-outlined">skip_previous</i>
+      <div class="play-pause">
+        <i class="material-symbols-outlined">play_arrow</i>
+
+      </div>
+      <i id="next" class="material-symbols-outlined">skip_next</i>
+      <i id="more-music" class="material-symbols-outlined">queue_music</i>
+    </div>
+    <div class="music-list">
+      <div class="header">
+        <div class="row">
+          <i class="material-symbols-outlined">queue_music</i>
+          <span>Music list</span>
+        </div>
+        <i id="close" class="material-symbols-outlined">close</i>
+      </div>
+      <ul></ul>
+    </div>
+  </div>
+</body>
+
+<script src="js/script.js"></script>
+
+</html>
